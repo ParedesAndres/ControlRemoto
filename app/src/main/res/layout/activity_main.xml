@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+        <Button
+            android:id="@+id/btn_arriba"
+            android:layout_width="@dimen/btn_size"
+            android:layout_height="@dimen/btn_size"
+            android:text="@string/btn_text"
+            android:textSize="@dimen/btn_text_size"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:background="@color/colorPrimaryDark"
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/btn_margin"
+            android:layout_marginBottom="@dimen/btn_margin"
+            android:orientation="horizontal"
+            >
+                <Button
+                    android:id="@+id/btn_izquierda"
+                    android:layout_width="@dimen/btn_size"
+                    android:layout_height="@dimen/btn_size"
+                    android:rotation="-90"
+                    android:layout_marginEnd="@dimen/btn_top"
+                    android:text="@string/btn_text"
+                    android:textSize="@dimen/btn_text_size"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:background="@color/colorPrimaryDark"
+                    />
+                <Button
+                    android:id="@+id/btn_derecha"
+                    android:layout_width="@dimen/btn_size"
+                    android:layout_height="@dimen/btn_size"
+                    android:rotation="90"
+                    android:text="@string/btn_text"
+                    android:textSize="@dimen/btn_text_size"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:background="@color/colorPrimaryDark"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_abajo"
+            android:rotation="180"
+            android:layout_width="@dimen/btn_size"
+            android:layout_height="@dimen/btn_size"
+            android:text="@string/btn_text"
+            android:textSize="@dimen/btn_text_size"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:background="@color/colorPrimaryDark" />
+</LinearLayout>
